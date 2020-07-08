@@ -1,2 +1,2 @@
-# testcs61b
-This is the test for CS61B Lab1.
+# UCB CS61B Materials
+This is the repository that stores all labs, homeworks and projects for UCB CS61B course.
