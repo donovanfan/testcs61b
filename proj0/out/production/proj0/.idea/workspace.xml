@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6809d1ad-56a5-46fb-862a-714b434b639b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/LeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/LeapYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/DebugPractice/DebugExercise3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/Intlist/IntListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/Intlist/IntListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/BasicInDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/BasicInDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/InDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/examples/InDemo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eHkEG21o0iFgijc0kMus535Qmo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Application.InDemo">
+    <configuration name="BasicInDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.BasicInDemo" />
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicInDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicInDemo" />
+      <module name="proj0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.InDemo" />
+      <module name="proj0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StdOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StdOut" />
+      <module name="proj0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InDemo" />
+        <item itemvalue="Application.BasicInDemo (1)" />
+        <item itemvalue="Application.BasicInDemo" />
+        <item itemvalue="Application.StdOut" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6809d1ad-56a5-46fb-862a-714b434b639b" name="Default Changelist" comment="" />
+      <created>1593985792759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593985792759</updated>
+      <workItem from="1593985795081" duration="15604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="23" key="#Auto_Import" timestamp="1594105260594">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="463" y="23" key="#Auto_Import/0.23.1440.816@0.23.1440.816" timestamp="1594105260594" />
+    <state x="495" y="331" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594074829303">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="495" y="331" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.816@0.23.1440.816" timestamp="1594074829303" />
+    <state x="229" y="23" width="1024" height="816" key="SettingsEditor" timestamp="1594105159809">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="229" y="23" width="1024" height="816" key="SettingsEditor/0.23.1440.816@0.23.1440.816" timestamp="1594105159809" />
+  </component>
+</project>
