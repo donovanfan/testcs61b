@@ -7,7 +7,7 @@ public class Planet {
     public String imgFileName;
 
     /** Gravitational constant */
-    public static final double G = 6.67e-11;
+    private static final double G = 6.67e-11;
 
 
     /** Initialize a Planet Object with six inputs.
