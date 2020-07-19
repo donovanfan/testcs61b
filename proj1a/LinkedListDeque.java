@@ -1,11 +1,11 @@
-public class LinkedListDeque<PlaceholderType> {
+public class LinkedListDeque<T> {
     /** Private helper class for node in LinkedListDeque. */
     private class ListNode {
-        private PlaceholderType item;
+        private T item;
         private ListNode prev;
         private ListNode next;
 
-        private ListNode(PlaceholderType i, ListNode j, ListNode k) {
+        private ListNode(T i, ListNode j, ListNode k) {
             item = i;
             prev = j;
             next = k;
@@ -22,22 +22,22 @@ public class LinkedListDeque<PlaceholderType> {
         size = 0;
     }
 
-    /** Adds an item of type PlaceholderType to the front.
+    /** Adds an item of type T to the front.
      *
      * @param item: new first item
      */
-    public void addFirst(PlaceholderType item) {
+    public void addFirst(T item) {
         ListNode temp = sentinel.next;
         sentinel.next = new ListNode(item, sentinel, temp);
         temp.prev = sentinel.next;
         size += 1;
     }
 
-    /** Adds an item of type PlaceholderType to the end.
+    /** Adds an item of type T to the end.
      *
      * @param item: new first item
      */
-    public void addLast(PlaceholderType item) {
+    public void addLast(T item) {
         ListNode temp = sentinel.prev;
         sentinel.prev = new ListNode(item, temp, sentinel);
         temp.next = sentinel.prev;
@@ -74,12 +74,12 @@ public class LinkedListDeque<PlaceholderType> {
      *
      * @return: First item of the deque if deque is not empty, null otherwise.
      */
-    public PlaceholderType removeFirst() {
+    public T removeFirst() {
         if (isEmpty()) {
             return null;
         }
         ListNode temp = sentinel.next.next;
-        PlaceholderType result = sentinel.next.item;
+        T result = sentinel.next.item;
         sentinel.next = temp;
         temp.prev = sentinel;
         this.size -= 1;
@@ -90,12 +90,12 @@ public class LinkedListDeque<PlaceholderType> {
      *
      * @return: Last item of the deque if deque is not empty, null otherwise.
      */
-    public PlaceholderType removeLast() {
+    public T removeLast() {
         if (isEmpty()) {
             return null;
         }
         ListNode temp = sentinel.prev.prev;
-        PlaceholderType result = sentinel.prev.item;
+        T result = sentinel.prev.item;
         sentinel.prev = temp;
         temp.next = sentinel;
         this.size -= 1;
@@ -108,7 +108,7 @@ public class LinkedListDeque<PlaceholderType> {
      * @param: The index of needed item.
      * @return: The item with index equal to the parameter index.
      */
-    public PlaceholderType get(int index) {
+    public T get(int index) {
         if (index < 0 || index > this.size - 1) {
             return null;
         }
@@ -126,7 +126,7 @@ public class LinkedListDeque<PlaceholderType> {
      * @param: The index of the needed item.
      * @return: The item with index equal to the parameter index.
      */
-    public PlaceholderType getRecursive(int index) {
+    public T getRecursive(int index) {
         if (index < 0 || index > this.size - 1) {
             return null;
         }
@@ -139,7 +139,7 @@ public class LinkedListDeque<PlaceholderType> {
      * @param input: The listnode given.
      * @return: The item of the listnode with index equal to param index.
      */
-    public PlaceholderType traverse(int index, ListNode input) {
+    public T traverse(int index, ListNode input) {
         if (index == 0) {
             return input.item;
         }

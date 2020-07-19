@@ -1,7 +1,7 @@
 import java.lang.Math.*;
 
-public class ArrayDeque<PlaceholderType> {
-    private PlaceholderType[] array;
+public class ArrayDeque<T> {
+    private T[] array;
     private int size;
     private int nextFirst;
     private int nextLast;
@@ -10,7 +10,7 @@ public class ArrayDeque<PlaceholderType> {
     /** Constructor of the class.
      */
     public ArrayDeque() {
-        array = (PlaceholderType[]) new Object [8];
+        array = (T[]) new Object [8];
         size = 0;
         nextFirst = 0;
         nextLast = 1;
@@ -63,7 +63,7 @@ public class ArrayDeque<PlaceholderType> {
             return;
         }
         /* Copy all the items in the array to the new array. */
-        PlaceholderType newArray[] = (PlaceholderType[]) new Object[newSize];
+        T newArray[] = (T[]) new Object[newSize];
         int start = findStart(nextFirst);
         int end = findEnd(nextLast);
         if (start < end) {
@@ -79,11 +79,11 @@ public class ArrayDeque<PlaceholderType> {
         updateUsage();
     }
 
-    /** Adds an item of type PlaceholderType to the front of the deque.
+    /** Adds an item of type T to the front of the deque.
      *
      * @param item: The item we would like to add into deque.
      */
-    public void addFirst(PlaceholderType item) {
+    public void addFirst(T item) {
         this.array[nextFirst] = item;
         this.size += 1;
         this.nextFirst = findEnd(this.nextFirst);
@@ -91,11 +91,11 @@ public class ArrayDeque<PlaceholderType> {
         resize();
     }
 
-    /** Adds an item of type PlaceholderType to the end of the deque.
+    /** Adds an item of type T to the end of the deque.
      *
      * @param item: The item we would like to add into deque.
      */
-    public void addLast(PlaceholderType item) {
+    public void addLast(T item) {
         this.array[nextLast] = item;
         this.size += 1;
         this.nextLast = findStart(this.nextLast);
@@ -134,12 +134,12 @@ public class ArrayDeque<PlaceholderType> {
      *
      * @return: First item of the deque if deque is not empty, null otherwise.
      */
-    public PlaceholderType removeFirst() {
+    public T removeFirst() {
         if (isEmpty()) {
             return null;
         }
         int index = findStart(this.nextFirst);
-        PlaceholderType result = array[index];
+        T result = array[index];
         array[index] = null;
         this.size -= 1;
         this.nextFirst = index;
@@ -152,12 +152,12 @@ public class ArrayDeque<PlaceholderType> {
      *
      * @return: Last item of the deque if deque is not empty, null otherwise.
      */
-    public PlaceholderType removeLast() {
+    public T removeLast() {
         if (isEmpty()) {
             return null;
         }
         int index = findEnd(this.nextLast);
-        PlaceholderType result = array[index];
+        T result = array[index];
         array[index] = null;
         this.size -= 1;
         this.nextLast = index;
@@ -172,7 +172,7 @@ public class ArrayDeque<PlaceholderType> {
      * @param: The index of needed item.
      * @return: The item with index equal to the parameter index.
      */
-    public PlaceholderType get(int index) {
+    public T get(int index) {
         if (index >= this.size ) {
             return null;
         }
