@@ -1,4 +1,6 @@
 import java.lang.Math.*;
+import java.util.Arrays;
+import static org.junit.Assert.assertEquals;
 
 public class ArrayDeque<T> {
     private T[] array;
@@ -6,6 +8,7 @@ public class ArrayDeque<T> {
     private int nextFirst;
     private int nextLast;
     private double usage;
+    private int capacity;
 
     /** Constructor of the class.
      */
@@ -32,20 +35,20 @@ public class ArrayDeque<T> {
         if (index == array.length - 1) {
             return 0;
         }
-        return(index + 1);
+        return (index + 1);
     }
 
     /**Helper method to find the current end of array. */
     private int findEnd(int index) {
         if (index == 0) {
-            return(array.length - 1);
+            return (array.length - 1);
         }
-        return(index - 1);
+        return (index - 1);
     }
 
     /** Private helper method to update usage. */
     private void updateUsage() {
-        this.usage = this.size / this.array.length;
+        this.usage = (double)this.size / (double)this.array.length;
     }
 
     /** Private method to resize the array when the usage ratio
@@ -63,19 +66,20 @@ public class ArrayDeque<T> {
             return;
         }
         /* Copy all the items in the array to the new array. */
-        T newArray[] = (T[]) new Object[newSize];
+        T newArray[] = (T[]) new Object [newSize];
         int start = findStart(nextFirst);
         int end = findEnd(nextLast);
         if (start < end) {
             System.arraycopy(array, start, newArray, 0, this.size);
+        } else {
+            int lengthFirst = array.length - start;
+            int lengthLast = this.size - lengthFirst;
+            System.arraycopy(array, start, newArray, 0, lengthFirst);
+            System.arraycopy(array, 0, newArray, lengthFirst, lengthLast);
         }
-        int lengthFirst = array.length - start;
-        int lengthLast = this.size - lengthFirst;
-        System.arraycopy(array, start, newArray, 0, lengthFirst);
-        System.arraycopy(array, 0, newArray, lengthFirst, lengthLast);
+        this.array = newArray;
         this.nextFirst = newSize - 1;
         this.nextLast = this.size;
-        this.array = newArray;
         updateUsage();
     }
 
@@ -108,7 +112,7 @@ public class ArrayDeque<T> {
      * @return: True if the deque is empty, false otherwise.
      */
     public boolean isEmpty() {
-        return(this.size == 0);
+        return (this.size == 0);
     }
 
     /** Return the number of items in the deque.
@@ -123,14 +127,15 @@ public class ArrayDeque<T> {
      */
     public void printDeque() {
         int index = findStart(nextFirst);
-        while(index != nextLast) {
+        while (index != nextLast) {
             System.out.print(array[index] + " ");
             index = findStart(nextFirst);
         }
         System.out.print("\n");
     }
 
-    /** Removes and returns the item at the front of the deque. If no such item exists, returns null.
+    /** Removes and returns the item at the front of the deque.
+     *  If no such item exists, returns null.
      *
      * @return: First item of the deque if deque is not empty, null otherwise.
      */
@@ -173,7 +178,7 @@ public class ArrayDeque<T> {
      * @return: The item with index equal to the parameter index.
      */
     public T get(int index) {
-        if (index >= this.size ) {
+        if (index >= this.size) {
             return null;
         }
         int arrayIndex = this.nextFirst + index + 1;

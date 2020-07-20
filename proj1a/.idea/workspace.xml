@@ -157,17 +157,60 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
-    <configuration name="LinkedListDequeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedListDequeTest" />
+  <component name="RunManager" selected="JUnit.ArrayDequeTest">
+    <configuration name="ArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayDeque" />
       <module name="proj1a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.testAddResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="testAddResize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="testRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.testRemoveResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1a" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
+      <option name="METHOD_NAME" value="testRemoveResize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinkedListDequeTest" />
+        <item itemvalue="JUnit.ArrayDequeTest" />
+        <item itemvalue="Application.ArrayDeque" />
+        <item itemvalue="JUnit.ArrayDequeTest.testRandom" />
+        <item itemvalue="JUnit.ArrayDequeTest.testRemoveResize" />
+        <item itemvalue="JUnit.ArrayDequeTest.testAddResize" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +224,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594710516780</updated>
-      <workItem from="1594710518639" duration="34459000" />
+      <workItem from="1594710518639" duration="44527000" />
     </task>
     <servers />
   </component>
@@ -200,22 +243,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="199" key="GridCell.Tab.0.bottom" timestamp="1595144321776">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1595235325361">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="199" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1595144321776" />
-    <state width="1358" height="199" key="GridCell.Tab.0.center" timestamp="1595144321775">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595235325361" />
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1595224784369" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1595231751343" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1595235325360">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="199" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1595144321775" />
-    <state width="1358" height="199" key="GridCell.Tab.0.left" timestamp="1595144321774">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595235325360" />
+    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1595224784368" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1595231751342" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1595235325359">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="199" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1595144321774" />
-    <state width="1358" height="199" key="GridCell.Tab.0.right" timestamp="1595144321775">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595235325359" />
+    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1595224784368" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1595231751341" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1595235325360">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1358" height="199" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1595144321775" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595235325360" />
+    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1595224784369" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1595231751342" />
     <state x="208" y="23" key="SettingsEditor" timestamp="1594710560093">
       <screen x="0" y="23" width="1440" height="814" />
     </state>

@@ -64,13 +64,14 @@ public class LinkedListDeque<T> {
      */
     public void printDeque() {
         ListNode temp = sentinel.next;
-        while(temp != sentinel) {
+        while (temp != sentinel) {
             System.out.print(temp.item + " ");
             temp = temp.next;
         }
     }
 
-    /** Removes and returns the item at the front of the deque. If no such item exists, returns null.
+    /** Removes and returns the item at the front of the deque.
+     *  If no such item exists, returns null.
      *
      * @return: First item of the deque if deque is not empty, null otherwise.
      */
@@ -139,7 +140,7 @@ public class LinkedListDeque<T> {
      * @param input: The listnode given.
      * @return: The item of the listnode with index equal to param index.
      */
-    public T traverse(int index, ListNode input) {
+    private T traverse(int index, ListNode input) {
         if (index == 0) {
             return input.item;
         }
