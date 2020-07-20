@@ -1,6 +1,4 @@
 import java.lang.Math.*;
-import java.util.Arrays;
-import static org.junit.Assert.assertEquals;
 
 public class ArrayDeque<T> {
     private T[] array;
