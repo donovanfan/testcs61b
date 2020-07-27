@@ -8,12 +8,12 @@ public class TestArrayDequeGold {
         if (rand >= 0.5) {
             ss.addFirst(i);
             cs.addFirst(i);
-            this.message += String.format("addFirst(%d)\n", i);
+            this.message += String.format("\naddFirst(%d)", i);
             return;
         }
         ss.addLast(i);
         cs.addLast(i);
-        this.message += String.format("addLast(%d)\n", i);
+        this.message += String.format("\naddLast(%d)", i);
     }
 
     private void modifiedRemove(double rand, StudentArrayDeque
@@ -22,11 +22,11 @@ public class TestArrayDequeGold {
         if (rand >= 0.5) {
             actual = ss.removeFirst();
             expected = cs.removeFirst();
-            this.message += "removeFirst()\n";
+            this.message += "\nremoveFirst()";
         } else {
             actual = ss.removeFirst();
             expected = cs.removeFirst();
-            this.message += "removeLast()\n";
+            this.message += "\nremoveLast()";
         }
         assertEquals(message, expected, actual);
     }
