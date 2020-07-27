@@ -25,9 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dccca4c-0191-4c5b-bf6a-3e3500284e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/proj1gold.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javalib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestArrayDequeGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestArrayDequeGold.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../skeleton-sp18" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton-sp18" afterDir="false" />
     </list>
@@ -71,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595809791689</updated>
       <workItem from="1595809796926" duration="94000" />
+      <workItem from="1595810024712" duration="50000" />
     </task>
     <servers />
   </component>
@@ -87,5 +86,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
