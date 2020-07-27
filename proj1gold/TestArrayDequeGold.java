@@ -1,64 +1,50 @@
-import org.junit.Test;
 import static org.junit.Assert.*;
-
+import org.junit.Test;
 public class TestArrayDequeGold {
+    private static String message = "";
 
-    private static final int nCall = 1000; // How many to call methods randomly
-    private static String message = ""; // Store failure sequence
-
-    /** Given uniformly distributed random double between 0 and 1,
-     * randomly adds Integer to deque.
-     * */
-    private void randomAdd(double random, Integer i, StudentArrayDeque<Integer> sad, ArrayDequeSolution<Integer> ads) {
-        if (random < 0.5) {
-            sad.addFirst(i);
-            ads.addFirst(i);
-            message += "\naddFirst(" + i + ")";
-        } else {
-            sad.addLast(i);
-            ads.addLast(i);
-            message += "\naddLast(" + i + ")";
+    private void modifiedAdd(double rand, Integer i, StudentArrayDeque
+            <Integer> ss, ArrayDequeSolution<Integer> cs) {
+        if (rand >= 0.5) {
+            ss.addFirst(i);
+            cs.addFirst(i);
+            message += String.format("addFirst(%d)\n", i);
+            return;
         }
+        ss.addLast(i);
+        cs.addLast(i);
+        message += String.format("addLast(%d)\n", i);
     }
 
-    /** Given uniformly distributed random double between 0 and 1,
-     * randomly adds Integer to deque.
-     * */
-    private void randomRemove(double random, Integer i, StudentArrayDeque<Integer> sad, ArrayDequeSolution<Integer> ads) {
-        Integer expected;
-        Integer actual;
-        if (random < 0.5) {
-            expected = ads.removeFirst();
-            actual = sad.removeFirst();
-            message += "\nremoveFirst()";
+    private void modifiedRemove(double rand, StudentArrayDeque
+            <Integer> ss, ArrayDequeSolution<Integer> cs) {
+        Integer expected, actual;
+        if (rand >= 0.5) {
+            actual = ss.removeFirst();
+            expected = cs.removeFirst();
+            message += "removeFirst()\n";
         } else {
-            expected = ads.removeLast();
-            actual = sad.removeLast();
-            message += "\nremoveLast()";
+            actual = ss.removeLast();
+            expected = cs.removeLast();
+            message += "removeLast()\n";
         }
         assertEquals(message, expected, actual);
     }
 
     @Test
-    public void testRandomized() {
-        StudentArrayDeque<Integer> sad = new StudentArrayDeque<>();
-        ArrayDequeSolution<Integer> ads = new ArrayDequeSolution<>();
-
-        for (Integer i = 0; i < nCall; i += 1) {
-            if (sad.isEmpty()) {
-                double random = StdRandom.uniform();
-                randomAdd(random, i, sad, ads);
+    public void tester() {
+        StudentArrayDeque<Integer> ss = new StudentArrayDeque<>();
+        ArrayDequeSolution<Integer> cs = new ArrayDequeSolution<>();
+        for (int i = 0; i < 1000; i++) {
+            double rand1 = StdRandom.uniform();
+            double rand2 = StdRandom.uniform();
+            if (ss.isEmpty()) {
+                modifiedAdd(rand2, StdRandom.poisson(10), ss, cs);
+            } else if (rand1 < 0.5) {
+                modifiedAdd(rand2, StdRandom.poisson(10), ss, cs);
             } else {
-                double random1 = StdRandom.uniform();
-                double random2 = StdRandom.uniform();
-                if (random1 < 0.5) {
-                    randomAdd(random2, i, sad, ads);
-                } else {
-                    randomRemove(random2, i, sad, ads);
-                }
+                modifiedRemove(rand2, ss, cs);
             }
         }
-
     }
-
 }
