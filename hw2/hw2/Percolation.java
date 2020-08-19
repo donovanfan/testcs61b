@@ -51,10 +51,12 @@ public class Percolation {
      * @param col: Column of the element.
      */
     public void open(int row, int col) {
+        if (isOpen(row, col)) {
+            return;
+        }
         int index = xyToIndexIn1D(row, col);
         openGrid[index] = true;
         numOpen += 1;
-
         if (row == 0) {
             backwashQU.union(topIndex, index);
             normalQU.union(topIndex, index);
