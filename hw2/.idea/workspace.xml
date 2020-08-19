@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17751d4-ca50-4a66-b5cd-afe4ae1ee7ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javalib1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hw2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/PercolationStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../skeleton-sp18" beforeDir="false" afterPath="$PROJECT_DIR$/../skeleton-sp18" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +161,7 @@
       <workItem from="1597689619181" duration="5373000" />
       <workItem from="1597812370056" duration="4076000" />
       <workItem from="1597821272519" duration="7841000" />
-      <workItem from="1597877543573" duration="159000" />
+      <workItem from="1597877543573" duration="367000" />
     </task>
     <servers />
   </component>
